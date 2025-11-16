@@ -19,9 +19,6 @@ export default function Header() {
 
         {/* Center Navigation */}
         <div className="flex items-center space-x-6">
-          <button className="text-sm font-medium hover:text-primary transition-colors">
-            Chat
-          </button>
         </div>
 
         {/* Right side actions */}

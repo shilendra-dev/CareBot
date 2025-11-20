@@ -23,6 +23,8 @@ const envSchema = z.object({
     FRONTEND_URL: z.string().optional(),
 
     JWT_SECRET: z.string().optional(),
+
+    OPENAI_API_KEY: z.string().optional(),
 });
 
 // Get environment-specific values
@@ -99,6 +101,9 @@ const parseEnv = () => {
                 },
                 jwt: {
                     secret: getEnvValue({ development: 'development-secret', test: 'test-secret', production: 'production-secret' }, 'development-secret'),
+                },
+                openai: {
+                    apiKey: env.OPENAI_API_KEY || 'sk-demo-key',
                 },
             },
         }

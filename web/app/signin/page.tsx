@@ -8,7 +8,7 @@ export default function SignInPage() {
   return (
     <div className="flex  w-full h-full items-center justify-center gap-4 p-4">
       <div className="flex flex-col shadow-2xl bg-[#141414] items-center justify-center w-2xl border-1 h-full rounded-lg">
-        <h1 className="text-2xl font-semibold font-serif">{`CareBot>`}</h1>
+        <h1 className="text-2xl font-semibold font-serif">{`CareBot`}</h1>
         <p className="text-xs text-muted-foreground">
               Your personal AI health assistant.
         </p>
